@@ -81,9 +81,9 @@ app.layout = html.Div(children=[
     State(component_id='TotalSF', component_property='value'),
     State(component_id='SingleFam', component_property='value'),
     State(component_id='LargeNeighborhood', component_property='value')
-
+    State(component_id='CentralAirCondition', component_property='value')
 )
-def ames_lr_function(clicks, YearBuilt,Bathrooms,BedroomAbvGr,TotalSF,SingleFam,LargeNeighborhood):
+def ames_lr_function(clicks, YearBuilt,Bathrooms,BedroomAbvGr,TotalSF,SingleFam,LargeNeighborhood, CentralAirCondition):
     if clicks==0:
         return "waiting for inputs"
     else:
